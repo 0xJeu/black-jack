@@ -19,7 +19,7 @@ public class Main {
         deck.shuffle();
 
         //Loop handles dealing cards to the dealer
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 2; i++) {
             Card card = deck.deal();
             dealerHand.deal(card);
         }
@@ -27,7 +27,7 @@ public class Main {
         // Loop handles dealing the cards to available players in HashMap
         for (Map.Entry<String, Hand> entry : players.entrySet()) {
             // deal 2 cards
-            for (int i = 0; i < 1; i++) {
+            for (int i = 0; i < 2; i++) {
                 // get a card from the deck
                 Card card = deck.deal();
                 // deal that card to the hand
